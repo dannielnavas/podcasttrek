@@ -1,0 +1,22 @@
+<div class="container-player">
+  <div class="action-icons">
+    <i class="fa fa-angle-double-left"></i>
+    <i [class]="icon" (click)="playAndPause()"></i>
+    <i class="fa fa-angle-double-right"></i>
+  </div>
+  <div class="name">
+    <input type="range" min="0" [max]="realDuracion" step="1" id="timeline" class="timeline" [value]="segundo" (change)="setTime($event)">
+    {{ play.title }}
+  </div>
+  <div class="time">
+    {{ play.duration }}
+  </div>
+  <div class="volumen">
+    <!-- <i class="fa fa-volume"></i> -->
+    <i class="fa fa-volume-down"></i>
+    <!-- <i class="fa fa-volume-mute"></i> -->
+  </div>
+  <div class="slide-volumen">
+    <input type="range" id="volumen" class="volumen-slide" min="1" max="100" [value]="50" (change)="volumen($event)">
+  </div>
+</div>

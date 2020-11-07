@@ -1,0 +1,28 @@
+.list {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid salmon;
+}
+
+.icons {
+  height: auto;
+  width: 35px;
+}
+
+.icons i {
+  font-size: 28px;
+}
+.episode {
+  height: auto;
+  width: calc(100% - 120px);
+  padding-left: 16px;
+}
+
+.duration {
+  height: auto;
+  width: 55px;
+  text-align: center;
+}

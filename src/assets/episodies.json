@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Podcast No. 1 - Retorno al puente",
+    "urlEpisodie": "/assets/episodies/Podcast/retorno.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 2,
+    "title": "Podcast No. 2  - Cosas que no tienen sentido en Voyager",
+    "urlEpisodie": "/assets/episodies/Podcast/cosas.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 3,
+    "title": "Podcast No. 3 Finales de serie en cine o TV",
+    "urlEpisodie": "/assets/episodies/Podcast/finales.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 4,
+    "title": "Podcast No. 4 Hablemos de naves",
+    "urlEpisodie": "/assets/episodies/Podcast/naves.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 5,
+    "title": "Podcast No. 5 El Lavadero Sonico - Picard",
+    "urlEpisodie": "/assets/episodies/Podcast/picard.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 6,
+    "title": "Podcast No. 6 Star Trek Discovery, temporada 2",
+    "urlEpisodie": "/assets/episodies/Podcast/discovery.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 7,
+    "title": "Podcast No. 7 El Lavadero Express - El Canon en Star Trek",
+    "urlEpisodie": "/assets/episodies/Podcast/canon.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 8,
+    "title": "Podcast No. 8 El Lavadero Sonico - Noticias de ComiCon y STLV 2019",
+    "urlEpisodie": "/assets/episodies/Podcast/comiccon.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 9,
+    "title": "Podcast No. 9 - El Lavadero sonico - The Orville y Galaxy Quest",
+    "urlEpisodie": "/assets/episodies/Podcast/orville.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 10,
+    "title": "Podcast No. 10 El Pasado en Presente Star Trek TOS",
+    "urlEpisodie": "/assets/episodies/Podcast/tos.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 11,
+    "title": "Podcast No. 11 - El Rincon del Coleccionista 1- Decipher customizable card game (ST CCG E1)",
+    "urlEpisodie": "/assets/episodies/Podcast/coleccionista.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 12,
+    "title": "Podcast No. 12. Star Trek Picard. capitulo final",
+    "urlEpisodie": "/assets/episodies/Podcast/picardfinal.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  },
+  {
+    "id": 13,
+    "title": "Podcast No. 13. Star Trek- First contact",
+    "urlEpisodie": "/assets/episodies/Podcast/contacto.mp3",
+    "urlImage": "https://image.tmdb.org/t/p/original/a8eMjQOmVJMB3JkkgXoUjrLIyZC.jpg",
+    "duration": "17: 50"
+  }
+]

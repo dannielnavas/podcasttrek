@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row-left">
+    <img class="row-left__caratula" [src]="caratula" alt="caratula">
+    <h1>Star trek colombia</h1>
+  </div>
+  <div class="row-right">
+    <div class="title">
+      <h2>Episodios</h2>
+    </div>
+    <div class="container-playlist">
+
+      <app-list *ngIf="episodies" [lista]="episodies" (newItemEvent)="selectSong($event)"></app-list>
+
+    </div>
+  </div>
+  <div class="footer-player">
+    <div class="container-player">
+      <app-action *ngIf="play" [play]="play"></app-action>
+    </div>
+  </div>
+</div>

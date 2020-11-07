@@ -1,0 +1,134 @@
+.container-player {
+  height: 120px;
+  width: 100%;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  // padding: 0 16px 0 16px;
+}
+.action-icons {
+  height: auto;
+  width: 150px;
+}
+
+.name {
+  height: auto;
+  width: 870px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFE0;
+  margin-top: 32px;
+}
+.time {
+  height: auto;
+  width: 62px;
+  color: #FFFFE0;
+  display: flex;
+  justify-content: center;
+}
+.volumen {
+  height: auto;
+  width: 32px;
+  text-align: center;
+}
+
+.volumen i {
+  font-size: 28px;
+  // color: #FFFFE0;
+}
+
+.action-icons i {
+  font-size: 28px;
+  margin: 0 8px 0 8px;
+  text-align: center;
+  color: #FFFFE0;
+}
+
+.card-volumen {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.slide-volumen {
+  width: 150px;
+  height: auto;
+}
+
+.duration {
+  height: auto;
+  width: 80%;
+  position: relative;
+}
+
+.name input {
+  margin-bottom: 16px;
+}
+
+input[type='range'] {
+  display: block;
+  width: 90%;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #02C38A;
+  width: 21px;
+  height: 21px;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+  margin-top: -9px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #02C38A;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #02C38A;
+  width: 21px;
+  height: 21px;
+  border: 3px solid #ddd;
+  border-radius: 50%;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #333;
+  height: 5px;
+  -webkit-appearance: none;
+  background-image:linear-gradient(to right, #02C38A calc(var(--value)*1%), black 0);
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  background-image:linear-gradient(to right, #02C38A calc(var(--value)*1%), black 0);
+  height: 5px;
+}
+
+input[type=range]::-ms-track {
+  background-color: #02C38A;
+  height: 3px;
+}

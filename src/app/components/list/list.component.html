@@ -1,0 +1,11 @@
+<div class="list" *ngFor="let list of lista">
+  <div class="icons">
+    <i [class]="play" (click)="playEpisodie(list)"></i>
+  </div>
+  <div class="episode">
+    {{ list.title }}
+  </div>
+  <div class="duration">
+    {{ list.duration }}
+  </div>
+</div>
