@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { interval } from 'rxjs';
 import { Episodies } from 'src/app/core/models/episodies';
 import { switchMap } from 'rxjs/operators';
@@ -8,7 +8,7 @@ import { switchMap } from 'rxjs/operators';
   templateUrl: './action.component.html',
   styleUrls: ['./action.component.scss'],
 })
-export class ActionComponent implements OnInit {
+export class ActionComponent implements OnInit, OnChanges {
   @Input() play: Episodies;
   playSong: Episodies;
   reproductor = new Audio();
@@ -29,9 +29,6 @@ export class ActionComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    for (let propName in changes) {
-      console.log(propName);
-    }
     if (this.play) {
       this.playSong = this.play;
       console.log(this.playSong);
