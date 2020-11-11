@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { interval } from 'rxjs';
 import { Episodies } from 'src/app/core/models/episodies';
 import { switchMap } from 'rxjs/operators';
@@ -8,8 +8,10 @@ import { switchMap } from 'rxjs/operators';
   templateUrl: './action.component.html',
   styleUrls: ['./action.component.scss'],
 })
-export class ActionComponent implements OnInit, OnChanges {
+export class ActionComponent implements OnInit {
   @Input() play: Episodies;
+  @Input() capitulos: Episodies[];
+  @Output() changeCaraturla = new EventEmitter<string>();
   playSong: Episodies;
   reproductor = new Audio();
   duracion: string;
@@ -20,30 +22,37 @@ export class ActionComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.play);
     if (this.play) {
       this.playSong = this.play;
-      console.log(this.playSong);
       this.selectAudio(this.playSong);
     }
   }
 
+  // tslint:disable-next-line: use-lifecycle-interface
   ngOnChanges(changes: SimpleChanges): void {
+    // tslint:disable-next-line: forin
+    for (const propName in changes) {
+      console.log(propName);
+    }
     if (this.play) {
       this.playSong = this.play;
-      console.log(this.playSong);
       this.selectAudio(this.playSong);
     }
   }
 
-  selectAudio(element: Episodies): void {
+  caratulaEpisodie(caratula: string): void {
+    this.changeCaraturla.emit(caratula);
+  }
+
+  selectAudio(element: Episodies, accion?: boolean): void {
     // this.actual = this.playSong.urlEpisodie;
     this.getDuration(this.reproductor);
     this.reproductor.src = element.urlEpisodie;
     this.reproductor.load();
     this.reproductor.play();
     this.reproductor.volume = 40 / 100;
-    this.getSeconds();
+    this.getSeconds(element.id);
+    accion ? this.play = element : this.play = this.play;
   }
 
   getDuration(player): void {
@@ -54,18 +63,17 @@ export class ActionComponent implements OnInit, OnChanges {
       duracion = (duracion * 100) / 100;
       d = String(duracion);
       this.duracion = d.replace('.', ':');
-      console.log(this.duracion);
     };
   }
 
-  getSeconds(): void {
+  getSeconds(id: number): void {
     const int = interval(1000);
     const subscription = int
       .pipe(switchMap(async () => this.reproductor.currentTime ))
       .subscribe(val => {
         this.segundo = val;
         if (this.segundo === this.realDuracion) {
-          // this.nextSong();
+          this.nextSong(id, true);
         }
       });
   }
@@ -85,33 +93,24 @@ export class ActionComponent implements OnInit, OnChanges {
   }
 
   volumen(event): void {
-    console.log(event);
     if (this.reproductor.volume > (event.target.value / 100 )) {
       this.volumenAction = 'volume_down';
     } else {
       this.volumenAction = 'volume_up';
     }
     this.reproductor.volume = event.target.value / 100;
-    console.log(this.reproductor.volume);
   }
 
-  // nextSong() {
-  //   const estado = this.actual.id - 1;
-  //   if (this.miAudio.length > this.actual.id) {
-  //     this.selectAudio(this.miAudio[estado + 1]);
-  //     this.iconNext = 'skip_previous';
-  //   } else {
-  //     this.selectAudio(this.miAudio[estado - 1]);
-  //     this.iconNext = 'skip_next';
-  //   }
-  // }
-  // volumenOf() {
-  //   if (this.volumenAction !== 'volume_off') {
-  //     this.volumenAction = 'volume_off';
-  //     this.reproductor.volume = 0;
-  //   } else {
-  //     this.volumenAction = 'volume_down';
-  //     this.reproductor.volume = 30 / 100;
-  //   }
-  // }
+  nextSong(id: number, action: boolean): void {
+    if (this.capitulos.length > id - 1) {
+
+      if(action) {
+        this.caratulaEpisodie(this.capitulos[id].urlImage);
+        this.selectAudio(this.capitulos[id], true);
+      } else {
+        this.caratulaEpisodie(this.capitulos[id - 2].urlImage);
+        this.selectAudio(this.capitulos[id - 2], true);
+      }
+    }
+  }
 }

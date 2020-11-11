@@ -1,8 +1,8 @@
 <div class="container-player">
   <div class="action-icons">
-    <i class="fa fa-angle-double-left"></i>
+    <i class="fa fa-angle-double-left" (click)="nextSong(play.id, false)"></i>
     <i [class]="icon" (click)="playAndPause()"></i>
-    <i class="fa fa-angle-double-right"></i>
+    <i class="fa fa-angle-double-right" (click)="nextSong(play.id, true)"></i>
   </div>
   <div class="name">
     <input type="range" min="0" [max]="realDuracion" step="1" id="timeline" class="timeline" [value]="segundo" (change)="setTime($event)">

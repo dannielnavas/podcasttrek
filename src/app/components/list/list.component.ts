@@ -13,11 +13,8 @@ export class ListComponent implements OnInit {
   pause = 'fa fa-pause';
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.lista);
-  }
+  ngOnInit(): void {}
   playEpisodie(episodie: Episodies): void {
-    console.log(episodie);
     this.newItemEvent.emit(episodie);
   }
 }

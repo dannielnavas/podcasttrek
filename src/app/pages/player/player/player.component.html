@@ -15,7 +15,7 @@
   </div>
   <div class="footer-player">
     <div class="container-player">
-      <app-action *ngIf="play" [play]="play"></app-action>
+      <app-action *ngIf="play" [play]="play" [capitulos]="episodies" (changeCaraturla)="refreshCaratula($event)"></app-action>
     </div>
   </div>
 </div>

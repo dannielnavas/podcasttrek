@@ -10,7 +10,7 @@ import { PlaylistService } from 'src/app/core/playlist/playlist.service';
 export class PlayerComponent implements OnInit {
   episodies: Episodies[];
   caratula =
-    'https://image.tmdb.org/t/p/original/blS50XLuAEXXrT4ykfLm3FsQCwc.jpg';
+    'https://4.bp.blogspot.com/-Nb53MHoec8c/XMDIz4WaiaI/AAAAAAAAB5Q/3VBHvMYKSfAwwFvA5bxQbqzxiLkP6DmBACK4BGAYYCw/s1028/head%2Bbanner.jpg';
   title = 'Titulo de prueba';
   play: Episodies;
   constructor(private playlistService: PlaylistService) {}
@@ -25,9 +25,12 @@ export class PlayerComponent implements OnInit {
       .subscribe((episodies: any) => (this.episodies = episodies));
   }
   selectSong(event: Episodies): void {
-    console.log(event);
     this.play = event;
     this.caratula = event.urlImage;
     this.title = event.title;
+  }
+
+  refreshCaratula(event: string): void {
+    this.caratula = event;
   }
 }

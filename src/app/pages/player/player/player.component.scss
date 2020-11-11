@@ -1,12 +1,26 @@
+@import "../../../utils/scss/mixins/mixins.scss";
 .container {
   width: 100%;
   height: 87%;
   display: flex;
+  @include for-phone-only {
+    height: 100%;
+  }
+  @include for-tablet-portrait-up {
+    height: 100%;
+  }
 }
 .row-left {
   width: 50%;
   height: 680px;
   background-color: #FFFFFF;
+
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 
   &__caratula {
     height: 400px;
@@ -15,24 +29,51 @@
       -moz-box-shadow: 10px 10px 5px #ccc;
       -webkit-box-shadow: 10px 10px 5px #ccc;
       -khtml-box-shadow: 10px 10px 5px #ccc;
+    @include for-phone-only {
+      width: 100%;
+      height: 100%;
+    }
+    @include for-tablet-portrait-up {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 .row-left h1 {
   text-align: center;
   font-size: 42px;
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 .row-right {
   width: 50%;
   height: 680px;
   background-color: #ffffff;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  
+  @include for-desktop-up {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
   box-shadow: 10px 10px 5px #ccc;
       -moz-box-shadow: 10px 10px 5px #ccc;
       -webkit-box-shadow: 10px 10px 5px #ccc;
       -khtml-box-shadow: 10px 10px 5px #ccc;
+  @include for-phone-only {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+  @include for-tablet-portrait-up {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 .title {
   height: 50%;
@@ -41,6 +82,14 @@
   align-items: center;
   margin: 0 0 0 32px;
   font-size: 38px;
+  @include for-phone-only {
+    height: auto;
+    width: auto;
+  }
+  @include for-tablet-portrait-up {
+    height: auto;
+    width: auto;
+  }
 }
 
 .container-playlist {
@@ -49,6 +98,13 @@
   padding-left: 16px;
   padding-right: 16px;
   overflow: scroll;
+  @include for-phone-only {
+    width: auto;
+  }
+  @include for-tablet-portrait-up {
+    height: 70%;
+    width: auto;
+  }
 }
 
 .footer-player {

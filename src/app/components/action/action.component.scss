@@ -1,3 +1,4 @@
+@import "../../utils/scss/mixins/mixins.scss";
 .container-player {
   height: 120px;
   width: 100%;
@@ -13,6 +14,18 @@
 .action-icons {
   height: auto;
   width: 150px;
+  @include for-phone-only {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  @include for-tablet-portrait-up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
 }
 
 .name {
@@ -24,6 +37,12 @@
   align-items: center;
   color: #FFFFE0;
   margin-top: 32px;
+  @include for-phone-only {
+    margin-top: 16px;
+  }
+  @include for-tablet-portrait-up {
+    margin-top: 16px;
+  }
 }
 .time {
   height: auto;
@@ -31,16 +50,34 @@
   color: #FFFFE0;
   display: flex;
   justify-content: center;
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 .volumen {
   height: auto;
   width: 32px;
   text-align: center;
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 
 .volumen i {
   font-size: 28px;
   // color: #FFFFE0;
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 
 .action-icons i {
@@ -59,6 +96,12 @@
 .slide-volumen {
   width: 150px;
   height: auto;
+  @include for-phone-only {
+    display: none;
+  }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 
 .duration {
