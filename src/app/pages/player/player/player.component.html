@@ -4,13 +4,12 @@
     <h1>Star trek colombia</h1>
   </div>
   <div class="row-right">
+    <div class="row-right__back"></div>
     <div class="title">
       <h2>Episodios</h2>
     </div>
     <div class="container-playlist">
-
       <app-list *ngIf="episodies" [lista]="episodies" (newItemEvent)="selectSong($event)"></app-list>
-
     </div>
   </div>
   <div class="footer-player">

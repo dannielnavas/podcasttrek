@@ -54,6 +54,8 @@
   height: 680px;
   background-color: #ffffff;
   display: flex;
+
+  
   
   @include for-desktop-up {
     align-content: flex-start;
@@ -74,7 +76,20 @@
     height: 100%;
     flex-direction: column;
   }
+
+  background-image: url('https://w.wallhaven.cc/full/g8/wallhaven-g8v9y3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
 }
+
+.row-right:before,
+.row-right:after {
+  content: "";
+  display: block;
+  clear: both;
+} 
+
 .title {
   height: 50%;
   width: 100%;
@@ -99,10 +114,11 @@
   padding-right: 16px;
   overflow: scroll;
   @include for-phone-only {
+    height: calc(100% - 120px);
     width: auto;
   }
   @include for-tablet-portrait-up {
-    height: 70%;
+    height: calc(100% - 120px);
     width: auto;
   }
 }
