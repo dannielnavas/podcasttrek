@@ -114,11 +114,11 @@
   padding-right: 16px;
   overflow: scroll;
   @include for-phone-only {
-    height: calc(100% - 120px);
+    height: calc(100% - 266px);
     width: auto;
   }
   @include for-tablet-portrait-up {
-    height: calc(100% - 120px);
+    height: calc(100% - 266px);
     width: auto;
   }
 }
