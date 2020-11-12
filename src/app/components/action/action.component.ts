@@ -53,6 +53,7 @@ export class ActionComponent implements OnInit {
     this.reproductor.volume = 40 / 100;
     this.getSeconds(element.id);
     accion ? this.play = element : this.play = this.play;
+    this.icon = 'fa fa-pause';
   }
 
   getDuration(player): void {

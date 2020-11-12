@@ -10,7 +10,7 @@ import { PlaylistService } from 'src/app/core/playlist/playlist.service';
 export class PlayerComponent implements OnInit {
   episodies: Episodies[];
   caratula =
-    'https://4.bp.blogspot.com/-Nb53MHoec8c/XMDIz4WaiaI/AAAAAAAAB5Q/3VBHvMYKSfAwwFvA5bxQbqzxiLkP6DmBACK4BGAYYCw/s1028/head%2Bbanner.jpg';
+    '/assets/sonico.png';
   title = 'Titulo de prueba';
   play: Episodies;
   constructor(private playlistService: PlaylistService) {}
