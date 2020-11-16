@@ -1,8 +1,8 @@
 {
   "name": "El lavadero sónico",
   "short_name": "El lavadero sónico",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#FFCC33",
+  "background_color": "#FFCC33",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
