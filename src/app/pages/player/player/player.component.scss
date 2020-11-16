@@ -77,7 +77,7 @@
     flex-direction: column;
   }
 
-  background-image: url('https://w.wallhaven.cc/full/g8/wallhaven-g8v9y3.jpg');
+  background-image: url('/assets/wallhaven-g8v9y3.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
@@ -128,4 +128,32 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+
+.banner-install {
+  position: absolute;
+  top: 0;
+  background-color: #07668C;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  justify-content: center;
+  @include for-phone-only {
+    height: 120px;
+    flex-wrap: wrap;
+  }
+}
+.banner-install a {
+  height: 25px;
+  width: auto;
+  padding: 8px;
+  background-color: #FFFFFF;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  border-radius: 4px;
 }

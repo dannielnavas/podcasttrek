@@ -1,3 +1,7 @@
+<!--  *ngIf="installEvent" -->
+<div class="banner-install" *ngIf="installEvent">
+  Bienvenido a El lavadero sonico si quieres llevarnos a todo lado te invitamos a <a (click)="installByUser()">Instala nuestra aplicación</a>
+</div>
 <div class="container">
   <div class="row-left">
     <img class="row-left__caratula" [src]="caratula" alt="caratula">
