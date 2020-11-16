@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { Episodies } from 'src/app/core/models/episodies';
 import { PlaylistService } from 'src/app/core/playlist/playlist.service';
 
@@ -13,6 +13,7 @@ export class PlayerComponent implements OnInit {
     '/assets/sonico.png';
   title = 'Titulo de prueba';
   play: Episodies;
+  installEvent = null;
   constructor(private playlistService: PlaylistService) {}
 
   ngOnInit(): void {
@@ -32,5 +33,21 @@ export class PlayerComponent implements OnInit {
 
   refreshCaratula(event: string): void {
     this.caratula = event;
+  }
+
+  @HostListener('window:beforeinstallprompt', ['$event'])
+  onBeforeInstallPrompt(event: Event): void {
+    event.preventDefault();
+    this.installEvent = event;
+  }
+
+  installByUser(): void {
+    if (this.installEvent) {
+      this.installEvent.prompt();
+      this.installEvent.userChoice
+        .then(rta => {
+          console.log(rta);
+        });
+    }
   }
 }

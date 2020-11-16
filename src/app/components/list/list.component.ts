@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, } from '@angular/core';
 import { Episodies } from 'src/app/core/models/episodies';
 
 @Component({
@@ -11,6 +11,7 @@ export class ListComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter<Episodies>();
   play = 'fa fa-play';
   pause = 'fa fa-pause';
+
   constructor() {}
 
   ngOnInit(): void {}
