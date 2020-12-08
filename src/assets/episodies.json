@@ -2,126 +2,126 @@
   {
     "id": 1,
     "title": "Podcast No. 1 - Retorno al puente",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/retorno.mp3?alt=media&token=d7e02be8-2563-4487-af0c-0592b5461cf5",
+    "urlEpisodie": "1.mp3",
     "urlImage": "/assets/episodies/images/01.jpg",
     "duration": "17:50"
   },
   {
     "id": 2,
     "title": "Podcast No. 2  - Cosas que no tienen sentido en Voyager",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/cosas.mp3?alt=media&token=f8df2c7d-f8d5-4ae6-b311-030fab685edd",
+    "urlEpisodie": "2.mp3",
     "urlImage": "/assets/episodies/images/02.jpg",
     "duration": "36:18"
   },
   {
     "id": 3,
     "title": "Podcast No. 3 Finales de serie en cine o TV",
-    "urlEpisodie": " https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/finales.mp3?alt=media&token=7d4c68e2-20f1-49e4-a828-4ed446a7e5cd",
+    "urlEpisodie": "3.mp3",
     "urlImage": "/assets/episodies/images/03.jpg",
     "duration": "57:11"
   },
   {
     "id": 4,
     "title": "Podcast No. 4 Hablemos de naves",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/naves.mp3?alt=media&token=4e1eefc7-0a86-4b58-a205-91363925bb4d",
+    "urlEpisodie": "4.mp3",
     "urlImage": "/assets/episodies/images/04.jpg",
     "duration": "1:04:03"
   },
   {
     "id": 5,
     "title": "Podcast No. 5 El Lavadero Sonico - Picard",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/picard.mp3?alt=media&token=f90c8a0f-7e87-48ba-a1b7-ba573e959422",
+    "urlEpisodie": "5.mp3",
     "urlImage": "/assets/episodies/images/05.jpg",
     "duration": "1:09:49"
   },
   {
     "id": 6,
     "title": "Podcast No. 6 Star Trek Discovery, temporada 2",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/discovery.mp3?alt=media&token=1e12ada6-c87c-4086-9a65-d01c45bfc275",
+    "urlEpisodie": "6.mp3",
     "urlImage": "/assets/episodies/images/06.jpg",
     "duration": "1:10:09"
   },
   {
     "id": 7,
     "title": "Podcast No. 7 El Lavadero Express - El Canon en Star Trek",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/canon.mp3?alt=media&token=ffb0360b-5fc8-4d1b-a686-f817c46c7262",
+    "urlEpisodie": "7.mp3",
     "urlImage": "/assets/episodies/images/07.jpg",
     "duration": "24:58"
   },
   {
     "id": 8,
     "title": "Podcast No. 8 El Lavadero Sonico - Noticias de ComiCon y STLV 2019",
-    "urlEpisodie": "/assets/episodies/Podcast/https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/comiccon.mp3?alt=media&token=c1c433e0-882a-49ad-8ee6-a897faab5959",
+    "urlEpisodie": "8.mp3",
     "urlImage": "/assets/episodies/images/08.jpg",
     "duration": "1:02:17"
   },
   {
     "id": 9,
     "title": "Podcast No. 9 - El Lavadero sonico - The Orville y Galaxy Quest",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/orville.mp3?alt=media&token=f0db7fc0-d248-4a04-a3ae-7af4c38de975",
+    "urlEpisodie": "9.mp3",
     "urlImage": "/assets/episodies/images/09.jpg",
     "duration": "1:04:11"
   },
   {
     "id": 10,
     "title": "Podcast No. 10 El Pasado en Presente Star Trek TOS",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/tos.mp3?alt=media&token=ef9296b4-6e6d-4341-b552-5101a31669be",
+    "urlEpisodie": "10.mp3",
     "urlImage": "/assets/episodies/images/10.jpg",
     "duration": "47:51"
   },
   {
     "id": 11,
     "title": "Podcast No. 11 - El Rincon del Coleccionista 1- Decipher customizable card game (ST CCG E1)",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/coleccionista.mp3?alt=media&token=54d8881a-600c-4230-bd26-9058373f28c6",
+    "urlEpisodie": "11.mp3",
     "urlImage": "/assets/episodies/images/11.jpg",
     "duration": "46:33"
   },
   {
     "id": 12,
     "title": "Podcast No. 12. Star Trek Picard. capitulo final",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/picardfinal.mp3?alt=media&token=0020cf8d-29f2-47a9-ac9e-7b4cfb9a4d11",
+    "urlEpisodie": "12.mp3",
     "urlImage": "/assets/episodies/images/12.jpg",
     "duration": "45:21"
   },
   {
     "id": 13,
     "title": "Podcast No. 13. Star Trek- First contact",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/contacto.mp3?alt=media&token=f6a6e248-b646-4a04-9d9b-8f464236f18c",
+    "urlEpisodie": "13.mp3",
     "urlImage": "/assets/episodies/images/13.jpg",
     "duration": "57:51"
   },
   {
     "id": 14,
     "title": "Podcast No. 14 Star Trek Picard. Revision de la primera temporada",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/picardprimera.mp3?alt=media&token=1b891ac5-f5b7-441a-85d0-2d83d4663df7",
+    "urlEpisodie": "14.mp3",
     "urlImage": "/assets/episodies/images/14.jpg",
     "duration": "1:01:14"
   },
   {
     "id": 15,
     "title": "Podcast No. 15 Capitulos insalvables en STAR TREK",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/insalvable.mp3?alt=media&token=da3e83de-a988-4c65-948f-e3c0810bb6bc",
+    "urlEpisodie": "15.mp3",
     "urlImage": "/assets/episodies/images/15.jpg",
     "duration": "1:12:56"
   },
   {
     "id": 16,
     "title": "Podcast No. 16 - A la defensa de INSURRECTION",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/insurrection.mp3?alt=media&token=e7132b64-7a2a-494d-ab8e-803caaa2f7c0",
+    "urlEpisodie": "16.mp3",
     "urlImage": "/assets/episodies/images/16.jpg",
     "duration": "1:07:42"
   },
   {
     "id": 17,
     "title": "Podcast No. 17 Un buen fin para la saga Star Trek Nemesis",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/nemesis.mp3?alt=media&token=4fb0045f-09e1-4b02-bf5f-6cf6b4a07caa",
+    "urlEpisodie": "17.mp3",
     "urlImage": "/assets/episodies/images/17.jpg",
     "duration": "1:12:18"
   },
   {
     "id": 18,
     "title": "Podcast No. 18 Lower Decks primera temporada",
-    "urlEpisodie": "https://firebasestorage.googleapis.com/v0/b/dannielnavas-ac420.appspot.com/o/lower.mp3?alt=media&token=cf8e7058-7239-42f9-8389-e80b497f5a90",
+    "urlEpisodie": "18.mp3",
     "urlImage": "/assets/episodies/images/18.jpg",
     "duration": "1:26:44"
   }
