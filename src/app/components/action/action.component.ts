@@ -1,3 +1,4 @@
+import { PlaylistService } from 'src/app/core/playlist/playlist.service';
 import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { interval } from 'rxjs';
 import { Episodies } from 'src/app/core/models/episodies';
@@ -19,7 +20,7 @@ export class ActionComponent implements OnInit {
   segundo: number;
   icon = 'fa fa-pause';
   volumenAction: string;
-  constructor() {}
+  constructor(private playlistService: PlaylistService) {}
 
   ngOnInit(): void {
     if (this.play) {
@@ -47,9 +48,13 @@ export class ActionComponent implements OnInit {
   selectAudio(element: Episodies, accion?: boolean): void {
     // this.actual = this.playSong.urlEpisodie;
     this.getDuration(this.reproductor);
-    this.reproductor.src = element.urlEpisodie;
-    this.reproductor.load();
-    this.reproductor.play();
+    const resultado = this.playlistService.referenciaCloudStorage(element.urlEpisodie);
+    resultado.getDownloadURL().subscribe((URL) => {
+      console.log('Cancion', URL);
+      this.reproductor.src = URL;
+      this.reproductor.load();
+      this.reproductor.play();
+    });
     this.reproductor.volume = 40 / 100;
     this.getSeconds(element.id);
     accion ? this.play = element : this.play = this.play;
