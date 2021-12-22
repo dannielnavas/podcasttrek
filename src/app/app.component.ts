@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
-import { AngularFireMessaging } from '@angular/fire/messaging';
+import { AngularFireMessaging } from '@angular/fire/compat/messaging';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
-} from '@angular/fire/firestore';
+} from '@angular/fire/compat/firestore';
 
 interface Token {
   token: string;
