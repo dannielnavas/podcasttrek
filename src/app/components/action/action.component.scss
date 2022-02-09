@@ -175,3 +175,18 @@ input[type=range]::-ms-track {
   background-color: #02C38A;
   height: 3px;
 }
+
+
+
+.currentProgressBar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0.75rem 0;
+}
+
+.currentProgressBar .currentProgress {
+  background-image: linear-gradient(to left, #df0000, #f2a000, #0099f6);
+  width: 0px;
+  height: 5px;
+  transition: 100ms;
+}

@@ -1,24 +1,14 @@
 <!--  *ngIf="installEvent" -->
 <div class="banner-install" *ngIf="installEvent">
-  Bienvenido a El lavadero sonico si quieres llevarnos a todo lado te invitamos a <a (click)="installByUser()">Instala nuestra aplicación</a>
+  Bienvenido a El lavadero sonico si quieres llevarnos a todo lado te invitamos a <a (click)="installByUser()">Instala
+    nuestra aplicación</a>
 </div>
-<div class="container">
-  <div class="row-left">
-    <img class="row-left__caratula" [src]="caratula" alt="caratula">
-    <h1>Star trek colombia</h1>
-  </div>
-  <div class="row-right">
-    <div class="row-right__back"></div>
-    <div class="title">
-      <h2>Episodios</h2>
-    </div>
-    <div class="container-playlist">
-      <app-list *ngIf="episodies" [lista]="episodies" (newItemEvent)="selectSong($event)"></app-list>
-    </div>
-  </div>
+<section class="container">
+  <app-list  (newItemEvent)="selectSong($event)"></app-list>
   <div class="footer-player">
     <div class="container-player">
-      <app-action *ngIf="play" [play]="play" [capitulos]="episodies" (changeCaraturla)="refreshCaratula($event)"></app-action>
+      <app-action *ngIf="play" [play]="play" [capitulos]="episodies" (changeCaraturla)="refreshCaratula($event)">
+      </app-action>
     </div>
   </div>
-</div>
+</section>

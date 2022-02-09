@@ -20,6 +20,7 @@ export class ActionComponent implements OnInit {
   segundo: number;
   icon = 'fa fa-pause';
   volumenAction: string;
+  currentProgressBar: any;
   constructor(private playlistService: PlaylistService) {}
 
   ngOnInit(): void {
@@ -78,6 +79,8 @@ export class ActionComponent implements OnInit {
       .pipe(switchMap(async () => this.reproductor.currentTime ))
       .subscribe(val => {
         this.segundo = val;
+        this.currentProgressBar = this.segundo / this.realDuracion  * 100;
+        console.log(this.currentProgressBar);
         if (this.segundo === this.realDuracion) {
           this.nextSong(id, true);
         }

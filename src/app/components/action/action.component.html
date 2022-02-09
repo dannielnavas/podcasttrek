@@ -5,7 +5,10 @@
     <i class="fa fa-angle-double-right" (click)="nextSong(play.id, true)"></i>
   </div>
   <div class="name">
-    <input type="range" min="0" [max]="realDuracion" step="1" id="timeline" class="timeline" [value]="segundo" (change)="setTime($event)">
+    <!-- <input type="range" min="0" [max]="realDuracion" step="1" id="timeline" class="timeline" [value]="segundo" (change)="setTime($event)"> -->
+    <div class="currentProgressBar">
+			<div class="currentProgress" [ngStyle]="{ width: currentProgressBar + '%' }"></div>
+		</div>
     {{ play.title }}
   </div>
   <div class="time">

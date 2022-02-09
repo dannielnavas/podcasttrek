@@ -9,8 +9,11 @@
 }
 
 .icons {
-  height: auto;
-  width: 35px;
+  img {
+    height: 50px;
+    width: 50px;
+    padding-left: 8px;
+  }
 }
 
 .icons i {

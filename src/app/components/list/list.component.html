@@ -1,12 +1,13 @@
 
-<div class="list" *ngFor="let list of lista">
+<h2>Lista de reproducción</h2>
+<div class="list" *ngFor="let list of lista$ | async">
   <div class="icons">
-    <i [class]="play" (click)="playEpisodie(list)"></i>
+      <img [src]="list.urlImage" [alt]="list.title">
   </div>
-  <div class="episode">
+  <div class="episode"  (click)="playEpisodie(list)">
     {{ list.title }}
   </div>
   <div class="duration">
-    {{ list.duration }}
+    <i [class]="play" (click)="playEpisodie(list)"></i>
   </div>
 </div>
