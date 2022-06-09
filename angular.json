@@ -129,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "podcastTrek"
+    }
+  },
+  "defaultProject": "podcastTrek",
+  "cli": {
+    "analytics": "a11090bf-8518-4b11-856b-11bf073d1d81"
+  }
 }
